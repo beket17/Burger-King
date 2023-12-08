@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: gold;
+    margin-bottom: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+}
+.navbar-1{
+    flex: 1;
+    text-align: right;
+}
+.navbar-1 ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 30px
+}
+nav img{
+    width: 50px;
+}
+.navbar-1 ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+#theme{
+    font-size: 16px;
+    background-color: rgb(243, 130, 1);
+    padding: 8px 12px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+}
+nav .fa-x,nav .fa-bars{
+    display: none;
+}
+
+.fa-instagram{
+    color: rgb(205, 63, 129);
+    font-size: 40px;
+}
+
+.fa-youtube{
+    color: rgb(255, 17, 0);
+    font-size: 40px;
+}
+
+.fa-twitter{
+    color: rgb(31, 136, 235);
+    font-size: 40px;
+}
+
+footer{
+    background-color: gold;
+}
+
+#carouselExampleAutoplaying{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media(max-width:800px) {
+    .navbar-1 ul li{
+        display: block;
+    }
+    .navbar-1{
+        position: fixed;
+        background-color: rgb(40, 96, 201);
+        height: 100vh;
+        top: 0;
+        right: -220px;
+        text-align: left;
+        transition: 1s;
+        z-index: 999;
+    }
+    nav .fa-x,nav .fa-bars{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+}
